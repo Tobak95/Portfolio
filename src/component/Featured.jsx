@@ -1,7 +1,7 @@
 import React from "react";
 import AdventureTime from "../../src/assets/AdventureTime.png";
 import greenIcon from "../assets/greenIcon.png";
-import webThree from "../assets/webThree.png";
+import webThree from "../assets/webthree.png";
 import sneakers from "../assets/sneakers.png";
 import viewProject from "../assets/viewProject.png";
 
