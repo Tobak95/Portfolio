@@ -1,10 +1,3 @@
-/* eslint-disable import/no-unresolved */
-import AdventureTime from "../../src/assets/AdventureTime.png";
-import greenIcon from "../assets/greenIcon.png";
-import sneakers from "../assets/sneakers.png";
-import webThree from "../assets/webThree.png";
-import viewProject from "../assets/viewProject.png";
-
 const Featured = () => {
   return (
     <div className="layout h-[2418px] ">
