@@ -6,7 +6,7 @@ import instagram from "../assets/instagram.png";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { contactDetails } from "../../utils/FormValidator";
+import { contactDetails } from "../../utils/formValidator";
 import { ClipLoader } from "react-spinners";
 import { axiosInstance } from "../../utils/axiosInstance";
 import { toast } from "react-toastify";
