@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import AdventureTime from "../../src/assets/AdventureTime.png";
 import greenIcon from "../assets/greenIcon.png";
 import sneakers from "../assets/sneakers.png";
