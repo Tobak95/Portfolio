@@ -3,7 +3,6 @@ import NavBar from "../component/layout/NavBar";
 import circleDownload from "../assets/circleDownload.png";
 import circledIn from "../assets/circledIn.png";
 import gitHorb from "../assets/gitHorb.png";
-import handCrossed from "../assets/handsCrossed.png";
 import bigMan from "../assets/bigMan.jpg";
 
 const HeroAbout = () => {
@@ -57,7 +56,11 @@ const HeroAbout = () => {
         </div>
 
         <div className="bg-[#C7C7C7] h-[700px] mb-3  rounded-xl flex items-center justify-center">
-          <img src={bigMan} alt="" className="mt-15 h-[699px] mb-15 object-cover" />
+          <img
+            src={bigMan}
+            alt=""
+            className="mt-15 h-[699px] mb-15 object-cover"
+          />
         </div>
       </div>
     </div>
