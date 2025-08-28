@@ -11,7 +11,7 @@ const Featured = () => {
 
       <div className="flex justify-between  mt-25 w-[1224px] h-[600px] text-white">
         <div className="w-[600px] ">
-          <img src="../../public/AdventureTime.png" alt="" />
+          <img src="../public/AdventureTime.png" alt="" />
         </div>
         <div className="w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -58,14 +58,14 @@ const Featured = () => {
           </div>
 
           <div className="flex justify-start lg:mr-80">
-            <img src="../../public/greenIcon.png" alt="" />
+            <img src="../public/greenIcon.png" alt="" />
           </div>
         </div>
       </div>
 
       <div className="flex justify-between  mt-25 w-[1224px] h-[600px] text-white">
         <div className="w-[600px] ">
-          <img src="../../public/webthree.png" alt="" />
+          <img src="../public/webthree.png" alt="" />
         </div>
         <div className="w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -119,14 +119,14 @@ const Featured = () => {
           </div>
 
           <div className="flex justify-start lg:mr-123">
-            <img src="../../public/viewProject.png" alt="" />
+            <img src="../public/viewProject.png" alt="" />
           </div>
         </div>
       </div>
 
       <div className="flex justify-between  mt-25 w-[1224px] h-[600px] text-white">
         <div className="w-[600px] ">
-          <img src="../../public/Sneakers.png" alt="" />
+          <img src="../public/Sneakers.png" alt="" />
         </div>
         <div className="w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -171,7 +171,7 @@ const Featured = () => {
           </div>
 
           <div className="flex justify-start lg:mr-80">
-            <img src="../../public/greenIcon.png" alt="" />
+            <img src="../public/greenIcon.png" alt="" />
           </div>
         </div>
       </div>
