@@ -2,7 +2,7 @@ import React from "react";
 import AdventureTime from "../../src/assets/AdventureTime.png";
 import greenIcon from "../assets/greenIcon.png";
 import webThree from "../assets/webthree.png";
-import sneakers from "../assets/sneakers.png";
+import sneakers from "../assets/Sneakers.png";
 import viewProject from "../assets/viewProject.png";
 
 const Featured = () => {
