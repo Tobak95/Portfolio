@@ -1,8 +1,15 @@
+import React from "react";
+import AdventureTime from "../../src/assets/AdventureTime.png";
+import greenIcon from "../assets/greenIcon.png";
+import webThree from "../assets/webThree.png";
+import sneakers from "../assets/sneakers.png";
+import viewProject from "../assets/viewProject.png";
+
 const Featured = () => {
   return (
     <div className="layout h-[2418px] ">
       <div className="w-[600px] h-[138px] text-white mt-20">
-        <h1 className="text-[76px] font-[400px]">FEATURED PROJECTS</h1>
+        <h1 className="text-[76px] font-[400px]">Featured Projects</h1>
         <p style={{ fontFamily: "Manrope" }} className="text-[18px] ">
           Here are some of the selected projects that showcase my passion for
           front-end development.
@@ -11,7 +18,7 @@ const Featured = () => {
 
       <div className="flex justify-between  mt-25 w-[1224px] h-[600px] text-white">
         <div className="w-[600px] ">
-          <img src="/public/AdventureTime.png" alt="" />
+          <img src={AdventureTime} alt="" />
         </div>
         <div className="w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -58,14 +65,14 @@ const Featured = () => {
           </div>
 
           <div className="flex justify-start lg:mr-80">
-            <img src="/public/greenIcon.png" alt="" />
+            <img src={greenIcon} alt="" />
           </div>
         </div>
       </div>
 
       <div className="flex justify-between  mt-25 w-[1224px] h-[600px] text-white">
         <div className="w-[600px] ">
-          <img src="/public/webthree.png" alt="" />
+          <img src={webThree} alt="" />
         </div>
         <div className="w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -119,14 +126,14 @@ const Featured = () => {
           </div>
 
           <div className="flex justify-start lg:mr-123">
-            <img src="/public/viewProject.png" alt="" />
+            <img src={viewProject} alt="" />
           </div>
         </div>
       </div>
 
       <div className="flex justify-between  mt-25 w-[1224px] h-[600px] text-white">
         <div className="w-[600px] ">
-          <img src="/public/Sneakers.png" alt="" />
+          <img src={sneakers} alt="" />
         </div>
         <div className="w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -171,7 +178,7 @@ const Featured = () => {
           </div>
 
           <div className="flex justify-start lg:mr-80">
-            <img src="/public/greenIcon.png" alt="" />
+            <img src={greenIcon} alt="" />
           </div>
         </div>
       </div>
