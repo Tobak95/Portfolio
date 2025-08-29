@@ -10,7 +10,7 @@ const MyCapabilities = () => {
             <h1 className="font-[400px] text-[40px] lg:text-[76px] ">MY CAPABILITIES</h1>
           </div>
 
-          <div className="lg:w-[600px] h-[241px] mt-5">
+          <div className="lg:w-[600px]  mt-5">
             <div>
               <p style={{ fontFamily: "Manrope" }} className="text-[#c7c7c7]">
                 I am a passionate and self-motivated frontend developer with

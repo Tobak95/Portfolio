@@ -9,22 +9,26 @@ const HeroAbout = () => {
   return (
     <div className=" bg-black">
       <NavBar />
-      <div className="layout bg-black h-[1300px] flex flex-col ">
+      <div className="layout bg-black flex flex-col ">
         <div>
           <div className="text-white  flex flex-col lg:flex-row justify-between  gap-5 mt-20">
             <div>
               <h1 className="text-[56px] lg:text-[101px]">ABOUT ME</h1>
             </div>
 
-            <div className="lg:w-[704px] ">
+            <div className="w-full lg:w-[704px] ">
               <h2
                 style={{ fontFamily: "Manrope" }}
-                className="text-[29px] lg:text-[32px] font-[500]"
+                className="text-[18px] lg:text-[32px] font-[500]"
               >
-                I am a front-end developer based in Lagos. Has
-                Mass-Communication background.{" "}
+                i'm a front-end developer from Lagos, bringing a background in
+                Mass Communication that helps me combine technical skills with
+                strong communication and design sense.{" "}
               </h2>
-              <p style={{ fontFamily: "Manrope" }} className="text-[18px] text-[#c7c7c7] mt-5">
+              <p
+                style={{ fontFamily: "Manrope" }}
+                className="text-[18px] text-[#c7c7c7] mt-5"
+              >
                 I am a Frontend Developer based in Lagos with a background in
                 Mass Communication. I enjoy creating responsive, accessible, and
                 user-friendly web interfaces, and I’m passionate about solving
@@ -33,7 +37,7 @@ const HeroAbout = () => {
                 bit of design to broaden my skill set.
               </p>
 
-              <div className="lg:w-[384px] h-[54px] flex justify-center items-center gap-3 mt-5 my-10">
+              <div className="lg:w-[384px] flex justify-center items-center gap-3 mt-5 my-10">
                 <div className="flex items-center justify-between  lg:justify-center gap-3 bg-[#D3E97A] w-[200px] lg:w-[244px] h-[40px] px-2 lg:px-0  lg:h-[54px] rounded-full ]">
                   <h1
                     style={{ fontFamily: "Manrope" }}
@@ -59,7 +63,7 @@ const HeroAbout = () => {
           <img
             src={bigMan}
             alt=""
-            className="lg:mt-15 w-full h-[400px] lg:h-[699px] mb-15 object-cover rounded-xl"
+            className="lg:mt-15 w-full h-auto lg:h-[699px] mb-15 object-cover  rounded-xl"
           />
         </div>
       </div>

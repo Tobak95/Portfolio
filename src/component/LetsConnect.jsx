@@ -63,7 +63,7 @@ const LetsConnect = () => {
               Let’s connect
             </h1>
           </div>
-          <div className="w-[302px] h-[62px]">
+          <div className="w-[302px] ">
             <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7]">
               Say hello to{" "}
               <span style={{ fontFamily: "Manrope" }} className="text-white">
