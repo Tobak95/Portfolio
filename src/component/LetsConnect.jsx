@@ -52,9 +52,9 @@ const LetsConnect = () => {
   };
 
   return (
-    <div className="layout mt-20">
-      <div className="flex justify-between h-[771px]">
-        <div className="w-[600px]">
+    <div className="layout mt-20 ">
+      <div className="flex flex-col lg:flex-row justify-between gap-10  mb-20 lg:mb-0">
+        <div className="lg:w-[600px]">
           <div>
             <h1
               style={{ fontFamily: "Bebas Neue" }}
@@ -77,7 +77,7 @@ const LetsConnect = () => {
             </p>
           </div>
 
-          <div className="w-[200px] flex justify-between mt-5">
+          <div className="w-[200px] flex justify-between mt-10 lg:mt-5">
             <img src={linkDn} alt="" />
             <img src={gitHorb} alt="" />
             <img src={twitter} alt="" />
@@ -85,8 +85,8 @@ const LetsConnect = () => {
           </div>
         </div>
 
-        <div className="w-[600px]">
-          <form onSubmit={handleSubmit(sendEmail)} className="">
+        <div className="lg:w-[600px] bg-black  ">
+          <form onSubmit={handleSubmit(sendEmail)} className="mt-20 lg:mt-0">
             <div className="mb-6">
               <label
                 style={{ fontFamily: "Manrope" }}
@@ -194,7 +194,7 @@ const LetsConnect = () => {
             <button
               style={{ fontFamily: "Manrope" }}
               type="submit"
-              className="text-black bg-[#D3E97A] focus:ring-4 focus:outline-none focus:ring-[#c7c7c7] font-[700] rounded-full text-[16px] w-[150px] h-[54px] text-center"
+              className="text-black bg-[#D3E97A] focus:ring-4 focus:outline-none focus:ring-[#c7c7c7] font-[700] rounded-full text-[16px] w-[150px] h-[54px] text-center my-5"
             >
               {isSubmitting ? (
                 <ClipLoader size={10} color="#0A0A0A" />
@@ -219,8 +219,14 @@ const LetsConnect = () => {
               </p>
             )}
           </form>
+          <div>
+          </div>
         </div>
+    
       </div>
+            <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7] my-5">
+              © 2024 Akinola Tobiloba.
+            </p>
     </div>
   );
 };

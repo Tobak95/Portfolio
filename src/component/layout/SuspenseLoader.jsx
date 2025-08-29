@@ -3,8 +3,8 @@ import { FadeLoader } from 'react-spinners'
 
 const PageLoader = () => {
   return (
-    <div className="flex justify-center  items-center h-screen">
-      <FadeLoader />
+    <div className="flex justify-center bg-black items-center h-screen">
+      <FadeLoader color="#ffffff" size={40} />
     </div>
   );
 }

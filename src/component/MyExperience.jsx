@@ -4,17 +4,24 @@ const MyExperience = () => {
   return (
     <div className=" bg-black ">
       <div className="layout">
-        <div className="flex flex-row justify-center  text-white">
+        <div className="flex flex-col lg:flex-row justify-center  text-white mt-20 lg:mt-0">
           <div className="w-[600px]">
-            <h1 className="font-[400px] text-[76px] ">MY EXPERIENCE</h1>
+            <h1 className="font-[400px] text-[40px] lg:text-[76px] ">
+              MY EXPERIENCE
+            </h1>
           </div>
 
-          <div className="w-[600px] h-[241px] mt-5">
-            <div className="flex justify-between">
+          <div className="w-[600px]  mt-5">
+            <div className="flex flex-col lg:flex-row justify-between">
               <h1 style={{ fontFamily: "Manrope" }} className="font-[500]">
                 Frontend Developer (Freelance Intern)
               </h1>
-              <p style={{ fontFamily: "Manrope" }}>Jan 2025 — Present </p>
+              <p
+                style={{ fontFamily: "Manrope" }}
+                className="text-[#c7c7c7] mt-2 lg:mt-0"
+              >
+                Jan 2025 — Present{" "}
+              </p>
             </div>
 
             <p
@@ -29,15 +36,23 @@ const MyExperience = () => {
             </p>
 
             <div className="mt-15">
-              <div className="flex justify-between">
+              <div className="flex flex-col lg:flex-row justify-between">
                 <h1
                   style={{ fontFamily: "Manrope" }}
                   className="font-[500] text-white"
                 >
                   Building and Testing REST API's with Node.js
                 </h1>
-                <p style={{ fontFamily: "Manrope" }}>Jan 2025, till date </p>
+                <p
+                  style={{ fontFamily: "Manrope" }}
+                  className="text-[#c7c7c7] mt-2 lg:mt-0"
+                >
+                  Jan 2025, till date{" "}
+                </p>
               </div>
+              <p style={{ fontFamily: "Manrope" }} className="text-[#D3E97A]">
+                Tech Studio Academy
+              </p>
 
               <p
                 style={{ fontFamily: "Manrope" }}

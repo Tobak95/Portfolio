@@ -1,6 +1,6 @@
 export const links = [
   { title: "Work", to: "#" },
-  { title: "About", to: "#" },
+  { title: "About", to: "/about" },
   { title: "Contact", to: "#" },
 ];
 
