@@ -3,7 +3,8 @@ import NavBar from "../component/layout/NavBar";
 import circleDownload from "../assets/circleDownload.png";
 import circledIn from "../assets/circledIn.png";
 import gitHorb from "../assets/gitHorb.png";
-import bigMan from "../assets/bigMan.jpg";
+import bigManRemoveBg from "../assets/bigManRemoveBg.png"
+
 
 const HeroAbout = () => {
   return (
@@ -12,18 +13,23 @@ const HeroAbout = () => {
       <div className="layout bg-black flex flex-col ">
         <div>
           <div className="text-white  flex flex-col lg:flex-row justify-between  gap-5 mt-20">
-            <div>
-              <h1 className="text-[56px] lg:text-[101px]">ABOUT ME</h1>
+            <div className="w-full lg:w-[520px]">
+              <h1
+                style={{ fontFamily: "Bebas Neue" }}
+                className="text-[35px] lg:text-[70px] font-[400]"
+              >
+                ABOUT ME
+              </h1>
             </div>
 
-            <div className="w-full lg:w-[704px] ">
+            <div className=" lg:w-[704px] ">
               <h2
                 style={{ fontFamily: "Manrope" }}
                 className="text-[18px] lg:text-[32px] font-[500]"
               >
-                i'm a front-end developer from Lagos, bringing a background in
-                Mass Communication that helps me combine technical skills with
-                strong communication and design sense.{" "}
+                I’m a Lagos-based full-stack developer with a Mass Communication
+                background, passionate about creating seamless user experiences
+                from front end to back end.
               </h2>
               <p
                 style={{ fontFamily: "Manrope" }}
@@ -59,11 +65,11 @@ const HeroAbout = () => {
           </div>
         </div>
 
-        <div className="lg:bg-[#C7C7C7] lg:h-[700px] mb-3  rounded-xl flex items-center justify-center ">
+        <div className="bg-[#C7C7C7] h-[343px] md:h-[390px] lg:h-[700px]   rounded-xl flex items-center justify-center mt-15 mb-15 w-full ">
           <img
-            src={bigMan}
+            src={bigManRemoveBg}
             alt=""
-            className="lg:mt-15 w-full h-auto lg:h-[699px] mb-15 object-cover  rounded-xl"
+            className=" w-[265px] mt-13  lg:mt-0 sm:w-[300px]  lg:w-[575px] h-auto mb-15 object-contain  rounded-xl"
           />
         </div>
       </div>

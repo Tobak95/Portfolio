@@ -3,10 +3,10 @@ import React from 'react'
 const MyExperience = () => {
   return (
     <div className=" bg-black ">
-      <div className="layout">
+      <div className="layout lg:mt-20">
         <div className="flex flex-col lg:flex-row justify-center  text-white mt-20 lg:mt-0">
           <div className="w-full lg:w-[600px]">
-            <h1 className="font-[400px] text-[40px] lg:text-[76px] ">
+            <h1 className="font-[400px] text-[30px] lg:text-[76px] ">
               MY EXPERIENCE
             </h1>
           </div>

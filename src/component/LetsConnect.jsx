@@ -52,18 +52,18 @@ const LetsConnect = () => {
   };
 
   return (
-    <div className="layout mt-20 ">
-      <div className="flex flex-col lg:flex-row justify-between gap-10  mb-20 lg:mb-0">
+    <div className="layout lg:mt-20 ">
+      <div className=" flex flex-col lg:flex-row justify-between  mb-20 lg:mb-0">
         <div className="lg:w-[600px]">
           <div>
             <h1
               style={{ fontFamily: "Bebas Neue" }}
-              className="text-[76px] text-white"
+              className="text-[46px] lg:text-[76px] text-white"
             >
               Let’s connect
             </h1>
           </div>
-          <div className="w-[302px] ">
+          <div className="w-full lg:w-[302px] mt-5 lg:mt-0">
             <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7]">
               Say hello to{" "}
               <span style={{ fontFamily: "Manrope" }} className="text-white">
@@ -77,7 +77,7 @@ const LetsConnect = () => {
             </p>
           </div>
 
-          <div className="w-[200px] flex justify-between mt-10 lg:mt-5">
+          <div className="w-full gap-5 lg:w-[200px] flex lg:justify-between mt-10 lg:mt-5">
             <img src={linkDn} alt="" />
             <img src={gitHorb} alt="" />
             <img src={twitter} alt="" />

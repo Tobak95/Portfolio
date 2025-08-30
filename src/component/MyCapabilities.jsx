@@ -6,8 +6,13 @@ const MyCapabilities = () => {
     <div className=" bg-black ">
       <div className="layout ">
         <div className="flex flex-col lg:flex-row justify-center  text-white">
-          <div className="w-[600px]">
-            <h1 className="font-[400px] text-[40px] lg:text-[76px] ">MY CAPABILITIES</h1>
+          <div className="lg:w-[600px]">
+            <h1
+              style={{ fontFamily: "Bebas Neue" }}
+              className="font-[400px] text-[30px] lg:text-[76px] "
+            >
+              MY CAPABILITIES
+            </h1>
           </div>
 
           <div className="lg:w-[600px]  mt-5">
@@ -19,20 +24,24 @@ const MyCapabilities = () => {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-3 lg:gap-4 mt-5">
+            <div className="flex flex-wrap gap-5 lg:gap-4 mt-5">
               {skills.map((skill) => {
                 return (
                   <div key={skill} className="text-white">
-                    <button className="border border-white rounded-full text-white  text-[14px] w-[100px] lg:w-[124px] h-[54px] p-3 ">
+                    <button className="border border-white rounded-full text-white  text-[14px] w-[100px] lg:w-[124px] lg:h-[54px] p-3 ">
                       {skill.title}
                     </button>
                   </div>
                 );
               })}
             </div>
+            
           </div>
+          
         </div>
+      
       </div>
+      
     </div>
   );
 };
