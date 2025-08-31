@@ -4,6 +4,11 @@ import greenIcon from "../assets/greenIcon.png";
 import webThree from "../assets/webthree.png";
 import sneakers from "../assets/Sneakers.png";
 import viewProject from "../assets/viewProject.png";
+import port1 from "../assets/port1.png";
+import port2 from "../assets/port2.png";
+import port3 from "../assets/port3.png";
+import arrow from "../assets/arrow.png";
+import giticon from "../assets/gitHorb.png";
 
 const Featured = () => {
   return (
@@ -22,8 +27,8 @@ const Featured = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-10 justify-center items-center mt-[100px]  lg:mt-25 lg:w-[1224px] text-white ">
-        <div className="lg:w-[600px] ">
-          <img src={AdventureTime} alt="" />
+        <div className="bg-[#1a1a1a] lg:w-[600px]  lg:h-[600px] flex items-center justify-center rounded-[16px] ">
+          <img src={port1} alt="" className="w-full h-full object-contain" />
         </div>
         <div className=" lg:w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -33,17 +38,19 @@ const Featured = () => {
                   style={{ fontFamily: "Manrope" }}
                   className="text-[26px] lg:text-[32px] font-[500]"
                 >
-                  Promotional landing page for our favorite show
+                  Torri Gate Homes
                 </h1>
                 <p
                   style={{ fontFamily: "Manrope" }}
                   className=" lg:mt-2 font-[400] lg:text-[18px] text-[#c7c7c7] my-5 lg:my-0 "
                 >
-                  Teamed up with a designer to breathe life into a promotional
-                  webpage for our beloved show, Adventure Time. Delivered a
-                  fully responsive design with dynamic content capabilities,
-                  seamlessly integrating a newsletter feature to keep fans
-                  updated with the latest adventures.
+                  TORRI GATE HOME is a modern web platform designed to bridge
+                  the gap between landlords and tenants. It provides a seamless
+                  way for landlords to list available properties and for tenants
+                  to search, filter, and connect with the right homes that fit
+                  their needs. The platform focuses on simplicity, transparency,
+                  and convenience—making renting easier, faster, and more
+                  accessible for everyone..
                 </p>
               </div>
 
@@ -67,17 +74,39 @@ const Featured = () => {
               </div>
               <hr className="mt-3" />
             </div>
-          </div>
-
-          <div className="flex justify-start lg:mr-80">
-            <img src={greenIcon} alt="" />
+            <div className="mt-5">
+              <div className="flex gap-5 lg:mr-80 text-[#D3E97A]">
+                <a
+                  href="https://torii-gate-house-hunt-frontend.vercel.app/"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  LIVE DEMO{" "}
+                  <span>
+                    <img src={arrow} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Tobak95/torii-gate-house-hunt-frontend"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  SEE ON GITHUB{" "}
+                  <span>
+                    <img src={giticon} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col lg:flex-row  gap-10 justify-center items-center  mt-25 lg:w-[1224px] text-white">
-        <div className="lg:w-[600px] ">
-          <img src={webThree} alt="" />
+        <div className="bg-[#1a1a1a] lg:w-[600px]  lg:h-[600px] flex items-center justify-center rounded-[16px] ">
+          <img src={port2} alt="" className="w-full h-full object-contain" />
         </div>
         <div className="lg:w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -87,16 +116,17 @@ const Featured = () => {
                   style={{ fontFamily: "Manrope" }}
                   className="text-[26px] lg:text-[32px] font-[500]"
                 >
-                  Blog site for World News
+                  My Movie App
                 </h1>
                 <p
                   style={{ fontFamily: "Manrope" }}
                   className="lg:mt-2 font-[400] text-[#c7c7c7] lg:text-[18px] my-5 lg:my-0"
                 >
-                  Mastered CSS Grid complexities in building an innovative news
-                  homepage, navigating intricate design decisions for a seamless
-                  user experience. Leveraged the challenge to enhance skills in
-                  front-end development.
+                  My movie app is a web platform built for movie enthusiasts to
+                  discover, rate, and review films. It provides a dynamic space
+                  where users can explore trending releases, classics, and
+                  hidden gems while sharing authentic opinions that help others
+                  decide what to watch next.
                 </p>
               </div>
               <h1 style={{ fontFamily: "Manrope" }} className="mt-10 lg:mt-0">
@@ -133,17 +163,38 @@ const Featured = () => {
               </div>
               <hr className="mt-3" />
             </div>
-          </div>
-
-          <div className="flex justify-start lg:mr-123">
-            <img src={viewProject} alt="" />
+            <div className="mt-5">
+              <div className="flex gap-5 lg:mr-80 text-[#D3E97A]">
+                <a
+                  href="https://movie-app-xi-seven-42.vercel.app/"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  LIVE DEMO{" "}
+                  <span>
+                    <img src={arrow} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Tobak95/Movie-App"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  SEE ON GITHUB{" "}
+                  <span>
+                    <img src={giticon} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col lg:flex-row  gap-10 justify-center items-center  mt-25 lg:w-[1224px] text-white">
-        <div className="lg:w-[600px] ">
-          <img src={sneakers} alt="" className="" />
+        <div className="bg-[#1a1a1a] lg:w-[600px]  lg:h-[600px] flex items-center justify-center rounded-[16px] ">
+          <img src={port3} alt="" className="w-full h-full object-contain" />
         </div>
         <div className="lg:w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
           <div>
@@ -153,15 +204,16 @@ const Featured = () => {
                   style={{ fontFamily: "Manrope" }}
                   className="text-[26px] lg:text-[32px] font-[500]"
                 >
-                  E-commerce product page
+                  Shortly
                 </h1>
                 <p
                   style={{ fontFamily: "Manrope" }}
                   className="lg:mt-2 font-[400] text-[#c7c7c7] lg:text-[18px] my-8 lg:my-0 "
                 >
-                  Successfully crafted an engaging product page featuring a
-                  dynamic lightbox gallery and seamless cart functionality,
-                  showcasing proficiency in JavaScript development.
+                  Shortly is a simple yet powerful web tool that transforms
+                  long, messy URLs into short, shareable links. It makes sharing
+                  content easier, cleaner, and more professional across social
+                  media, emails, and everyday use.
                 </p>
               </div>
               <h1 style={{ fontFamily: "Manrope" }} className="">
@@ -184,10 +236,32 @@ const Featured = () => {
               </div>
               <hr className="mt-3" />
             </div>
-          </div>
-
-          <div className="flex justify-start lg:mr-80">
-            <img src={greenIcon} alt="" />
+            <div className="mt-5">
+              <div className="flex gap-5 lg:mr-80 text-[#D3E97A]">
+                <a
+                  href="https://shortly-tobi.vercel.app/"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  LIVE DEMO{" "}
+                  <span>
+                    <img src={arrow} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Tobak95/shortly"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  SEE ON GITHUB{" "}
+                  <span>
+                    <img src={giticon} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

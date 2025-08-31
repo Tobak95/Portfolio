@@ -26,27 +26,28 @@ const Introduction = () => {
             </p>
 
             <div className="flex gap-6  items-center w-[327px]">
-              <div className="flex gap-4 justify-center bg-[#D3E97A] p-2 w-[187px] h-[54px] text-black rounded-full items-center">
-                <p style={{ fontFamily: "Manrope" }} className="font-[700px]">
-                  Contact Me
-                </p>
-
-                <img src={circle} alt="" />
+              <div className=" bg-[#D3E97A] p-2 w-[187px] h-[54px] text-black rounded-full items-center">
+                <a href="#contact" className="flex gap-4 justify-center items-center">
+                  <p style={{ fontFamily: "Manrope" }} className="font-[700px]">
+                    Contact Me
+                  </p>
+                  <img src={circle} alt="" />
+                </a>
               </div>
 
-              <Link to={"/https://www.linkedin.com/in/akinola-tobi-369762381/"}>
+              <a href="https://www.linkedin.com/in/akinola-tobi-369762381" target="blank">
                 <button>
                   {" "}
                   <img src={circledIn} alt="" />
                 </button>
-              </Link>
+              </a>
 
-              <Link to={"/https://github.com/Tobak95"}>
+              <a href="https://github.com/Tobak95" target="blank">
                 <button>
                   {" "}
                   <img src={circledGitHub} alt="" />
                 </button>
-              </Link>
+              </a>
             </div>
           </div>
 
