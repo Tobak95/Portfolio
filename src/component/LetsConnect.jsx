@@ -79,12 +79,17 @@ const LetsConnect = () => {
           </div>
 
           <div className="w-full gap-5 lg:w-[200px] flex lg:justify-between mt-10 lg:mt-5">
-            <img src={linkDn} alt="" />
+            <Link to={"/https://www.linkedin.com/in/akinola-tobi-369762381/"}>
+              <img src={linkDn} alt="" />
+            </Link>
 
             <Link to={"/https://github.com/Tobak95"}>
               <img src={gitHorb} alt="" />
             </Link>
-            <img src={twitter} alt="" />
+
+            <Link to={"/https://x.com/TobakTobi"}>
+              <img src={twitter} alt="" />
+            </Link>
             <img src={instagram} alt="" />
           </div>
         </div>

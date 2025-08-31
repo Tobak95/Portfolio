@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div className="layout bg-black ">
-      <div className="text-white  flex flex-row justify-between  gap-5 mt-20">
+      <div className="text-white  flex flex-row justify-between   gap-5 mt-20">
         <div className="hidden lg:block  w-[600px]">
           <h1 style={{ fontFamily: "Bebas Neue" }} className="text-[76px]">
             ABOUT ME
@@ -18,7 +19,10 @@ const About = () => {
             I am a front-end developer based in Sydney. Has Mechanical
             Engineering background.{" "}
           </h2>
-          <p style={{ fontFamily: "Manrope" }} className="lg:text-[18px] text-[#c7c7c7] lg:mt-5">
+          <p
+            style={{ fontFamily: "Manrope" }}
+            className="lg:text-[18px] text-[#c7c7c7] lg:mt-5"
+          >
             I am a front-end developer based in Sydney looking for exciting
             opportunities. Has Mechanical Engineering background. Likes to focus
             on accessibility when developing. Passionate and curious about
@@ -28,12 +32,14 @@ const About = () => {
             skill.
           </p>
 
-          <h1
-            style={{ fontFamily: "Manrope" }}
-            className="mt-10 text-[#D3E97A] underline font-[500] text-[16px]"
-          >
-            MORE ABOUT ME
-          </h1>
+          <Link to={"/about"}>
+            <h1
+              style={{ fontFamily: "Manrope" }}
+              className="mt-10 text-[#D3E97A] underline font-[500] text-[16px]"
+            >
+              MORE ABOUT ME
+            </h1>
+          </Link>
         </div>
       </div>
     </div>

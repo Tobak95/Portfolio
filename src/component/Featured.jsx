@@ -21,7 +21,7 @@ const Featured = () => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center mt-[100px]  lg:mt-25 lg:w-[1224px] text-white ">
+      <div className="flex flex-col lg:flex-row gap-10 justify-center items-center mt-[100px]  lg:mt-25 lg:w-[1224px] text-white ">
         <div className="lg:w-[600px] ">
           <img src={AdventureTime} alt="" />
         </div>
@@ -75,7 +75,7 @@ const Featured = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center  mt-25 lg:w-[1224px] text-white">
+      <div className="flex flex-col lg:flex-row  gap-10 justify-center items-center  mt-25 lg:w-[1224px] text-white">
         <div className="lg:w-[600px] ">
           <img src={webThree} alt="" />
         </div>
@@ -141,7 +141,7 @@ const Featured = () => {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row justify-center items-center  mt-25 lg:w-[1224px] text-white">
+      <div className="flex flex-col lg:flex-row  gap-10 justify-center items-center  mt-25 lg:w-[1224px] text-white">
         <div className="lg:w-[600px] ">
           <img src={sneakers} alt="" className="" />
         </div>

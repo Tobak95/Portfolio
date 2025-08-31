@@ -34,10 +34,12 @@ const Introduction = () => {
                 <img src={circle} alt="" />
               </div>
 
-              <button>
-                {" "}
-                <img src={circledIn} alt="" />
-              </button>
+              <Link to={"/https://www.linkedin.com/in/akinola-tobi-369762381/"}>
+                <button>
+                  {" "}
+                  <img src={circledIn} alt="" />
+                </button>
+              </Link>
 
               <Link to={"/https://github.com/Tobak95"}>
                 <button>
