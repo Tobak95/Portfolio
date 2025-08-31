@@ -10,6 +10,7 @@ import { contactDetails } from "../../utils/formValidator";
 import { ClipLoader } from "react-spinners";
 import { axiosInstance } from "../../utils/axiosInstance";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 const LetsConnect = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -32,7 +33,7 @@ const LetsConnect = () => {
       if (response.status === 200) {
         setStatus("SUCCESS");
         reset();
-         toast.success("Your Request Has Been Received");
+        toast.success("Your Request Has Been Received");
       } else {
         setStatus("ERROR");
       }
@@ -79,7 +80,10 @@ const LetsConnect = () => {
 
           <div className="w-full gap-5 lg:w-[200px] flex lg:justify-between mt-10 lg:mt-5">
             <img src={linkDn} alt="" />
-            <img src={gitHorb} alt="" />
+
+            <Link to={"/https://github.com/Tobak95"}>
+              <img src={gitHorb} alt="" />
+            </Link>
             <img src={twitter} alt="" />
             <img src={instagram} alt="" />
           </div>
@@ -219,14 +223,12 @@ const LetsConnect = () => {
               </p>
             )}
           </form>
-          <div>
-          </div>
+          <div></div>
         </div>
-    
       </div>
-            <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7] my-5">
-              © 2024 Akinola Tobiloba.
-            </p>
+      <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7] my-5">
+        © 2024 Akinola Tobiloba.
+      </p>
     </div>
   );
 };

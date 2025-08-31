@@ -3,8 +3,8 @@ import NavBar from "../component/layout/NavBar";
 import circleDownload from "../assets/circleDownload.png";
 import circledIn from "../assets/circledIn.png";
 import gitHorb from "../assets/gitHorb.png";
-import bigManRemoveBg from "../assets/bigManRemoveBg.png"
-
+import bigManRemoveBg from "../assets/bigManRemoveBg.png";
+import { Link } from "react-router-dom";
 
 const HeroAbout = () => {
   return (
@@ -59,7 +59,10 @@ const HeroAbout = () => {
                 </div>
 
                 <img src={circledIn} alt="" className="" />
-                <img src={gitHorb} alt="" />
+
+                <Link to={"/https://github.com/Tobak95"}>
+                  <img src={gitHorb} alt="" />
+                </Link>
               </div>
             </div>
           </div>

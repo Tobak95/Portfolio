@@ -4,6 +4,7 @@ import circledIn from "../assets/circledIn.png";
 import circledGitHub from "../assets/circledGitHub.png";
 import smilingMan from "../assets/smilingMan.jpg";
 import circle from "../assets/circle.png";
+import { Link } from "react-router-dom";
 
 const Introduction = () => {
   return (
@@ -37,10 +38,13 @@ const Introduction = () => {
                 {" "}
                 <img src={circledIn} alt="" />
               </button>
-              <button>
-                {" "}
-                <img src={circledGitHub} alt="" />
-              </button>
+
+              <Link to={"/https://github.com/Tobak95"}>
+                <button>
+                  {" "}
+                  <img src={circledGitHub} alt="" />
+                </button>
+              </Link>
             </div>
           </div>
 
