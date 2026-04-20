@@ -14,14 +14,14 @@ const Introduction = () => {
       <div className="layout h-[700px] ">
         <div className="flex flex-col lg:flex-row justify-between gap-10 items-center h-full">
           <div className="flex flex-col gap-8 lg:w-[544px] ">
-            <h1 className="w-full text-[60px] lg:text-[101px]">
+            <h1 className="w-full text-[35px] lg:text-[101px]">
               HI, I AM AKINOLA TOBILOBA
             </h1>
             <p
               style={{ fontFamily: "Manrope" }}
               className="w-full lg:text-[18px] text-[#C7C7C7] "
             >
-              A Sydney based front-end developer passionate about building
+              A Lagos based front-end developer passionate about building
               accessible and user friendly websites.
             </p>
 
@@ -55,7 +55,7 @@ const Introduction = () => {
             <img
               src={smilingMan}
               alt=""
-              className="w-[600px] h-[700px] object-cover rounded-xl"
+              className="w-[600px] h-[370px] lg:h-[700px] object-cover rounded-xl"
             />
           </div>
         </div>

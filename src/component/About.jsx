@@ -16,20 +16,20 @@ const About = () => {
             style={{ fontFamily: "Manrope" }}
             className="text-[32px] font-[500] hidden lg:block"
           >
-            I am a front-end developer based in Sydney. Has Mechanical
-            Engineering background.{" "}
+            I’m a front-end developer based in Lagos with a Mass Communication
+            background.{" "}
           </h2>
           <p
             style={{ fontFamily: "Manrope" }}
             className="lg:text-[18px] text-[#c7c7c7] lg:mt-5"
           >
-            I am a front-end developer based in Sydney looking for exciting
-            opportunities. Has Mechanical Engineering background. Likes to focus
-            on accessibility when developing. Passionate and curious about
-            solving problems. Currently, I’m exploring Reactjs, Webflow and a
-            bit of Designing. While I am not programming, I enjoy playing
-            football, photography and playing Valorant. Learning more to improve
-            skill.
+            Lagos based front-end developer open to new opportunities. My
+            foundation in Mass Communication informs a user-first approach to
+            development, with a strong emphasis on accessibility and inclusive
+            design. Currently advancing my expertise in React.js, I'm passionate
+            about solving problems thoughtfully and writing code that works for
+            diverse audiences. When I'm not building, I'm playing football or
+            exploring the world through photography.
           </p>
 
           <Link to={"/about"}>

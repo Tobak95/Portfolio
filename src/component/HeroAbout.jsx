@@ -12,7 +12,7 @@ const HeroAbout = () => {
       <NavBar />
       <div className="layout bg-black flex flex-col ">
         <div>
-          <div className="text-white  flex flex-col lg:flex-row justify-between  gap-5 mt-20">
+          <div className="text-white  flex flex-col lg:flex-row justify-between  gap-5 ">
             <div className="w-full lg:w-[520px]">
               <h1
                 style={{ fontFamily: "Bebas Neue" }}

@@ -15,7 +15,7 @@ const MyCapabilities = () => {
             </h1>
           </div>
 
-          <div className="lg:w-[600px]  mt-5">
+          <div className="lg:w-[600px]  mt-4">
             <div>
               <p style={{ fontFamily: "Manrope" }} className="text-[#c7c7c7]">
                 I am a passionate and self-motivated frontend developer with
@@ -28,20 +28,16 @@ const MyCapabilities = () => {
               {skills.map((skill) => {
                 return (
                   <div key={skill} className="text-white">
-                    <button className="border border-white rounded-full text-white  text-[14px] w-[100px] lg:w-[124px] lg:h-[54px] p-3 ">
+                    <button className="border border-white rounded-full text-white mt-4  text-[14px] w-[150px] lg:w-[124px] lg:h-[54px] p-3 ">
                       {skill.title}
                     </button>
                   </div>
                 );
               })}
             </div>
-            
           </div>
-          
         </div>
-      
       </div>
-      
     </div>
   );
 };

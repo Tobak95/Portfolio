@@ -238,7 +238,7 @@ const LetsConnect = () => {
         </div>
       </div>
       <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7] my-5">
-        © 2024 Akinola Tobiloba.
+        © 2026  Akinola Tobiloba.
       </p>
     </div>
   );

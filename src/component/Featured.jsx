@@ -13,7 +13,7 @@ import giticon from "../assets/gitHorb.png";
 const Featured = () => {
   return (
     <div className="layout  ">
-      <div className="  mt-[500px]  lg:w-[600px]  text-white lg:mt-20">
+      <div className=" mt-7 lg:w-[600px]  text-white lg:mt-20">
         <h1 className="text-[50px] lg:text-[76px] font-[400px]">
           Featured Projects
         </h1>
