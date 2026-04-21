@@ -27,20 +27,21 @@ const HeroAbout = () => {
                 style={{ fontFamily: "Manrope" }}
                 className="text-[18px] lg:text-[32px] font-[500]"
               >
-                I’m a Lagos-based full-stack developer with a Mass Communication
-                background, passionate about creating seamless user experiences
-                from front end to back end.
+                I’m a Lagos-based full-stack developer with a Information and
+                Communication system, passionate about creating seamless user
+                experiences from front end to back end.
               </h2>
               <p
                 style={{ fontFamily: "Manrope" }}
                 className="text-[18px] text-[#c7c7c7] mt-5"
               >
-                I am a Frontend Developer based in Lagos with a background in
-                Mass Communication. I enjoy creating responsive, accessible, and
-                user-friendly web interfaces, and I’m passionate about solving
-                problems with curiosity and creativity. Beyond coding, I love
-                cooking, and I’m currently exploring React.js, Next-Js, and a
-                bit of design to broaden my skill set.
+                I am a Frontend Developer based in Lagos with a background
+                Information and Communication system. I enjoy creating
+                responsive, accessible, and user-friendly web interfaces, and
+                I’m passionate about solving problems with curiosity and
+                creativity. Beyond coding, I love cooking, and I’m currently
+                exploring React.js, Next-Js, and a bit of design to broaden my
+                skill set.
               </p>
 
               <div className="lg:w-[384px] flex justify-center items-center gap-3 mt-5 my-10">
