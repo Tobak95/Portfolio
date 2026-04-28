@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import { IoMdMenu } from "react-icons/io";
 import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
-const NavBar = () => {
+import circledLink from "../../assets/circledIn.png";
+import circledGitHub from "../../assets/circledGitHub.png";
 
+const NavBar = () => {
   const [showHamburger, setShowHamburger] = useState(false);
 
   return (
-    <nav className="bg-black">
+    <nav className="bg-black fixed top-0 left-0 w-full z-30">
       <div className="layout px-4 text-[#C7C7C7]">
         <div className="flex justify-between items-center h-[96px] font-[Bebas Neue]">
           <Link to={"/"}>
@@ -20,20 +22,46 @@ const NavBar = () => {
             </div>
           </Link>
 
-          <div className="hidden lg:flex justify-between items-center gap-3 lg:gap-6 lg:w-[207px] ">
-            {links.map((link, index) => {
-              return (
-                <a
-                  style={{ fontFamily: "Inter,sans-serif" }}
-                  key={index}
-                  href={link.to}
-                  className="font-[Inter]"
-                >
-                  {link.title}
-                </a>
-              );
-            })}
+          <div className="flex gap-3 items-center">
+            <div className="hidden lg:flex justify-between items-center gap-3 lg:gap-6 mr-5 ">
+              {links.map((link, index) => {
+                return (
+                  <a
+                    style={{ fontFamily: "Inter,sans-serif" }}
+                    key={index}
+                    href={link.to}
+                    className="font-[Inter]"
+                  >
+                    {link.title}
+                  </a>
+                );
+              })}
+            </div>
+
+            <div className="flex gap-3">
+              <a
+                href="https://www.linkedin.com/in/akinola-tobi-369762381"
+                target="blank"
+              >
+                <button>
+                  {" "}
+                  <img src={circledLink} alt="" className="h-[30px] w-[30px]" />
+                </button>
+              </a>
+
+              <a href="https://github.com/Tobak95" target="blank">
+                <button>
+                  {" "}
+                  <img
+                    src={circledGitHub}
+                    alt=""
+                    className="h-[30px] w-[30px]"
+                  />
+                </button>
+              </a>
+            </div>
           </div>
+
           {showHamburger ? (
             <MdOutlineClose
               className="text-[30px] lg:hidden cursor-pointer "

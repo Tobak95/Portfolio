@@ -9,6 +9,8 @@ import port2 from "../assets/port2.png";
 import port3 from "../assets/port3.png";
 import arrow from "../assets/arrow.png";
 import giticon from "../assets/gitHorb.png";
+import HMSProject from "../assets/HMSProject.png"
+import event from "../assets/eventra.png"
 
 const Featured = () => {
   return (
@@ -24,6 +26,87 @@ const Featured = () => {
           Here are some of the selected projects that showcase my passion for
           front-end development.
         </p>
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-10 justify-center items-center mt-[100px]  lg:mt-25 lg:w-[1224px] text-white ">
+        <div className="bg-[#1a1a1a] lg:w-[600px]  lg:h-[600px] flex items-center justify-center rounded-[16px] ">
+          <img src={event} alt="" className="w-full h-full object-contain" />
+        </div>
+        <div className=" lg:w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
+          <div>
+            <div className="lg:w-[600px] lg:mt-5  ">
+              <div className="">
+                <h1
+                  style={{ fontFamily: "Manrope" }}
+                  className="text-[26px] lg:text-[32px] font-[500]"
+                >
+                  Eventra
+                </h1>
+                <p
+                  style={{ fontFamily: "Manrope" }}
+                  className=" lg:mt-2 font-[400] lg:text-[18px] text-[#c7c7c7] my-5 lg:my-0 "
+                >
+                  Eventra is a modern event management platform designed to
+                  simplify how users discover, book, and manage events online.
+                  The platform allows organizers to create and manage events,
+                  track registrations, and engage attendees through an intuitive
+                  dashboard, while users can browse upcoming events, register
+                  seamlessly, and receive a smooth booking experience. Built
+                  with a responsive and user-friendly interface, Eventra
+                  enhances event planning and participation across mobile and
+                  desktop devices.
+                </p>
+              </div>
+
+              <h1 style={{ fontFamily: "Manrope" }} className="">
+                PROJECT INFO
+              </h1>
+              <hr className="mt-2" />
+
+              <div
+                style={{ fontFamily: "Manrope" }}
+                className="flex justify-between mt-2 "
+              >
+                <h1 style={{ fontFamily: "Manrope" }}>Year</h1>
+                <p style={{ fontFamily: "Manrope" }}>2025</p>
+              </div>
+              <hr className="mt-3" />
+
+              <div className="flex justify-between mt-4 ">
+                <h1 style={{ fontFamily: "Manrope" }}>Role</h1>
+                <p style={{ fontFamily: "Manrope" }}>Frontend Developer</p>
+              </div>
+              <hr className="mt-3" />
+            </div>
+
+            <div className="mt-5">
+              <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
+                <a
+                  href="https://torii-gate-house-hunt-frontend.vercel.app/"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  LIVE DEMO{" "}
+                  <span>
+                    <img src={arrow} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Tobak95/torii-gate-house-hunt-frontend"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  SEE ON GITHUB{" "}
+                  <span>
+                    <img src={giticon} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-10 justify-center items-center mt-[100px]  lg:mt-25 lg:w-[1224px] text-white ">
@@ -75,7 +158,93 @@ const Featured = () => {
               <hr className="mt-3" />
             </div>
             <div className="mt-5">
-              <div className="flex gap-5 lg:mr-80 text-[#D3E97A]">
+              <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
+                <a
+                  href="https://torii-gate-house-hunt-frontend.vercel.app/"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  LIVE DEMO{" "}
+                  <span>
+                    <img src={arrow} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Tobak95/torii-gate-house-hunt-frontend"
+                  target="blank"
+                  style={{ fontFamily: "Manrope" }}
+                  className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
+                >
+                  SEE ON GITHUB{" "}
+                  <span>
+                    <img src={giticon} alt="" className="w-[24px] h-[24px]" />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col lg:flex-row gap-10 justify-center items-center mt-[100px]  lg:mt-25 lg:w-[1224px] text-white ">
+        <div className="bg-[#1a1a1a] lg:w-[600px]  lg:h-[600px] flex items-center justify-center rounded-[16px] ">
+          <img
+            src={HMSProject}
+            alt=""
+            className="w-full h-full object-contain"
+          />
+        </div>
+        <div className=" lg:w-[600px] flex flex-col mt-12 gap-5 justify-between items-center py-6 ">
+          <div>
+            <div className="lg:w-[600px] lg:mt-5  ">
+              <div className="">
+                <h1
+                  style={{ fontFamily: "Manrope" }}
+                  className="text-[26px] lg:text-[32px] font-[500]"
+                >
+                  Hospital Management System
+                </h1>
+                <p
+                  style={{ fontFamily: "Manrope" }}
+                  className=" lg:mt-2 font-[400] lg:text-[18px] text-[#c7c7c7] my-5 lg:my-0 "
+                >
+                  Hospital Management System (H M S) is a modern web-based
+                  healthcare platform designed to simplify hospital operations
+                  and improve interactions between administrators, doctors, and
+                  patients. The system features role-based dashboards, secure
+                  authentication, appointment scheduling, patient record
+                  management, and streamlined communication workflows. Built
+                  with a responsive and user-friendly interface, it helps
+                  healthcare facilities manage daily activities efficiently
+                  while providing patients with a seamless digital experience
+                  across desktop and mobile devices.
+                </p>
+              </div>
+
+              <h1 style={{ fontFamily: "Manrope" }} className="">
+                PROJECT INFO
+              </h1>
+              <hr className="mt-2" />
+
+              <div
+                style={{ fontFamily: "Manrope" }}
+                className="flex justify-between mt-2 "
+              >
+                <h1 style={{ fontFamily: "Manrope" }}>Year</h1>
+                <p style={{ fontFamily: "Manrope" }}>2025 - 2026</p>
+              </div>
+              <hr className="mt-3" />
+
+              <div className="flex justify-between mt-4 ">
+                <h1 style={{ fontFamily: "Manrope" }}>Role</h1>
+                <p style={{ fontFamily: "Manrope" }}>Front-end Developer</p>
+              </div>
+              <hr className="mt-3" />
+            </div>
+
+            <div className="mt-5">
+              <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
                 <a
                   href="https://torii-gate-house-hunt-frontend.vercel.app/"
                   target="blank"
@@ -164,7 +333,7 @@ const Featured = () => {
               <hr className="mt-3" />
             </div>
             <div className="mt-5">
-              <div className="flex gap-5 lg:mr-80 text-[#D3E97A]">
+              <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
                 <a
                   href="https://movie-app-xi-seven-42.vercel.app/"
                   style={{ fontFamily: "Manrope" }}
@@ -237,7 +406,7 @@ const Featured = () => {
               <hr className="mt-3" />
             </div>
             <div className="mt-5">
-              <div className="flex gap-5 lg:mr-80 text-[#D3E97A]">
+              <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
                 <a
                   href="https://shortly-tobi.vercel.app/"
                   target="blank"

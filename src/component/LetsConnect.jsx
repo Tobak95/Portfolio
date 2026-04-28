@@ -67,8 +67,8 @@ const LetsConnect = () => {
           <div className="w-full lg:w-[302px] mt-5 lg:mt-0">
             <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7]">
               Say hello to{" "}
-              <span style={{ fontFamily: "Manrope" }} className="text-white">
-                akinolatobiloba@gmail.com
+              <span style={{ fontFamily: "Manrope" }} className="text-white underline cursor-pointer">
+                akinola.tobi.2010@gmail.com
               </span>{" "}
               For more info, here's my{" "}
               <span style={{ fontFamily: "Manrope" }} className="text-white">
