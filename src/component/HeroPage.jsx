@@ -45,9 +45,9 @@ const Introduction = () => {
     <div className="bg-black text-white">
       <NavBar />
 
-      <div className="layout h-[550px] ">
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-10 items-center h-full">
-          <div className="flex flex-col gap-4 lg:w-[544px] ">
+      <div className="layout lg:h-[550px] ">
+        <div className="mt-30 flex flex-col lg:flex-row lg:justify-between gap-10 items-center h-full lg:mt-20">
+          <div className="flex flex-col gap-4 lg:w-[544px]  ">
             <h1 className="w-full text-[30px] lg:text-[35px]">
               Hi 👋, My name is Oluwatobiloba.
             </h1>
@@ -89,7 +89,7 @@ const Introduction = () => {
           </div>
         </div>
         <div className="w-full lg:flex gap-3 text-[20px] ">
-          <div className="hidden lg:flex justify-center items-center gap-3 lg:w-[190px] rounded-md bg-[#D3E97A]">
+          <div className="lg:hidden mt-10 flex justify-center items-center gap-3 lg:w-[190px] rounded-md bg-[#D3E97A]">
             <a
               href="../../document/Oluwatobiloba's_CV.pdf"
               className=" text-[#000000] rounded-full"
