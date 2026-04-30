@@ -10,63 +10,50 @@ const HeroAbout = () => {
   return (
     <div className=" bg-black">
       <NavBar />
-      <div className="layout bg-black flex flex-col ">
+      <div className="layout bg-black mt-20 ">
         <div>
-          <div className="text-white  flex flex-col lg:flex-row justify-between  gap-5 ">
-            <div className="w-full lg:w-[520px]">
-              <h1
-                style={{ fontFamily: "Bebas Neue" }}
-                className="text-[35px] lg:text-[70px] font-[400]"
-              >
-                ABOUT ME
-              </h1>
-            </div>
-
-            <div className=" lg:w-[704px] ">
-              <h2
-                style={{ fontFamily: "Manrope" }}
-                className="text-[18px] lg:text-[32px] font-[500]"
-              >
-                I’m a Lagos-based full-stack developer with a Information and
-                Communication system, passionate about creating seamless user
-                experiences from front end to back end.
-              </h2>
-              <p
-                style={{ fontFamily: "Manrope" }}
-                className="text-[18px] text-[#c7c7c7] mt-5"
-              >
-                I am a Frontend Developer based in Lagos with a background
-                Information and Communication system. I enjoy creating
-                responsive, accessible, and user-friendly web interfaces, and
-                I’m passionate about solving problems with curiosity and
-                creativity. Beyond coding, I love cooking, and I’m currently
-                exploring React.js, Next-Js, and a bit of design to broaden my
-                skill set.
-              </p>
-
-              <div className="lg:w-[384px] flex justify-center items-center gap-3 mt-5 my-10">
-                <div className="flex items-center justify-between  lg:justify-center gap-3 bg-[#D3E97A] w-[200px] lg:w-[244px] h-[40px] px-2 lg:px-0  lg:h-[54px] rounded-full ]">
-                  <h1
-                    style={{ fontFamily: "Manrope" }}
-                    className="  rounded-full font-[700] text-black text-[12px] lg:text-[16px]"
-                  >
-                    DOWNLOAD RESUME
-                  </h1>
-                  <img
-                    src={circleDownload}
-                    alt=""
-                    className="lg:w-[10px] lg:h-[10px]"
-                  />
+           <div className="text-white flex flex-col mt-10 lg:flex-row justify-between gap-5 lg:mt-20">
+                  <div className="w-full lg:w-[600px]">
+                    <h1
+                      style={{ fontFamily: "Bebas Neue" }}
+                      className="text-[30px] lg:text-[76px]"
+                    >
+                      ABOUT ME
+                    </h1>
+                  </div>
+          
+                  <div className="w-full lg:w-[704px] ">
+                    {/* <h2
+                      style={{ fontFamily: "Manrope" }}
+                      className=" lg:text-[16px] font-[500] text-[#c7c7c7] "
+                    >
+                      I’m a front-end developer based in Lagos with a Information and
+                      Communication system.{" "}
+                    </h2> */}
+                    <p
+                      style={{ fontFamily: "Manrope" }}
+                      className=" lg:text-[16px] text-[#c7c7c7] font-[500] "
+                    >
+                      Lagos based front-end developer open to new opportunities. My
+                      foundation in Information and communication system informs a
+                      user-first approach to development, with a strong emphasis on
+                      accessibility and inclusive design. Currently advancing my expertise
+                      in React.js, I'm passionate about solving problems thoughtfully and
+                      writing code that works for diverse audiences. When I'm not
+                      building, I'm playing football or exploring the world through
+                      photography.
+                    </p>
+          
+                    {/* <Link to={"/about"}>
+                      <h1
+                        style={{ fontFamily: "Manrope" }}
+                        className="mt-3 lg:mt-10 text-[#D3E97A] underline font-[500] text-[16px]"
+                      >
+                        MORE ABOUT ME
+                      </h1>
+                    </Link> */}
+                  </div>
                 </div>
-
-                <img src={circledIn} alt="" className="" />
-
-                <Link to={"/https://github.com/Tobak95"}>
-                  <img src={gitHorb} alt="" />
-                </Link>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="bg-[#C7C7C7] h-[343px] md:h-[390px] lg:h-[700px]   rounded-xl flex items-center justify-center mt-15 mb-15 w-full ">

@@ -4,19 +4,23 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="layout bg-black ">
-      <div className="text-white  flex flex-row justify-between   gap-5 mt-20">
-        <div className="hidden lg:block  w-[600px]">
-          <h1 style={{ fontFamily: "Bebas Neue" }} className="text-[76px]">
+      <div className="text-white flex flex-col mt-10 lg:flex-row justify-between gap-5 lg:mt-20">
+        <div className="w-full lg:w-[600px]">
+          <h1
+            style={{ fontFamily: "Bebas Neue" }}
+            className="text-[26px] lg:text-[76px]"
+          >
             ABOUT ME
           </h1>
         </div>
 
-        <div className="w-[704px] ">
+        <div className="w-full lg:w-[704px] ">
           <h2
             style={{ fontFamily: "Manrope" }}
-            className="text-[32px] font-[500] hidden lg:block"
+            className=" lg:text-[32px] text-[#c7c7c7] "
           >
-            I’m a front-end developer based in Lagos with a Information and Communication system.{" "}
+            I’m a front-end developer based in Lagos with a Information and
+            Communication system.{" "}
           </h2>
           <p
             style={{ fontFamily: "Manrope" }}
@@ -35,7 +39,7 @@ const About = () => {
           <Link to={"/about"}>
             <h1
               style={{ fontFamily: "Manrope" }}
-              className="mt-10 text-[#D3E97A] underline font-[500] text-[16px]"
+              className="mt-3 lg:mt-10 text-[#D3E97A] underline font-[500] text-[16px]"
             >
               MORE ABOUT ME
             </h1>

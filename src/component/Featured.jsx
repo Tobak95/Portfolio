@@ -24,7 +24,7 @@ const Featured = () => {
           className="text-[18px] text-[#c7c7c7] "
         >
           Here are some of the selected projects that showcase my passion for
-          front-end development.
+          frontend development.
         </p>
       </div>
 
@@ -38,7 +38,7 @@ const Featured = () => {
               <div className="">
                 <h1
                   style={{ fontFamily: "Manrope" }}
-                  className="text-[26px] lg:text-[32px] font-[500]"
+                  className="text-[26px] lg:text-[32px] font-[700]"
                 >
                   Eventra
                 </h1>
@@ -119,7 +119,7 @@ const Featured = () => {
               <div className="">
                 <h1
                   style={{ fontFamily: "Manrope" }}
-                  className="text-[26px] lg:text-[32px] font-[500]"
+                  className="text-[26px] lg:text-[32px] font-[700]"
                 >
                   Torri Gate Homes
                 </h1>
@@ -153,7 +153,7 @@ const Featured = () => {
 
               <div className="flex justify-between mt-4 ">
                 <h1 style={{ fontFamily: "Manrope" }}>Role</h1>
-                <p style={{ fontFamily: "Manrope" }}>Front-end Developer</p>
+                <p style={{ fontFamily: "Manrope" }}>Frontend Developer</p>
               </div>
               <hr className="mt-3" />
             </div>
@@ -201,7 +201,7 @@ const Featured = () => {
               <div className="">
                 <h1
                   style={{ fontFamily: "Manrope" }}
-                  className="text-[26px] lg:text-[32px] font-[500]"
+                  className="text-[26px] lg:text-[32px] font-[700]"
                 >
                   Hospital Management System
                 </h1>
@@ -238,7 +238,7 @@ const Featured = () => {
 
               <div className="flex justify-between mt-4 ">
                 <h1 style={{ fontFamily: "Manrope" }}>Role</h1>
-                <p style={{ fontFamily: "Manrope" }}>Front-end Developer</p>
+                <p style={{ fontFamily: "Manrope" }}>Frontend Developer</p>
               </div>
               <hr className="mt-3" />
             </div>
@@ -283,7 +283,7 @@ const Featured = () => {
               <div>
                 <h1
                   style={{ fontFamily: "Manrope" }}
-                  className="text-[26px] lg:text-[32px] font-[500]"
+                  className="text-[26px] lg:text-[32px] font-[700]"
                 >
                   My Movie App
                 </h1>
@@ -327,7 +327,7 @@ const Featured = () => {
               <div className="flex justify-between mt-4 ">
                 <h1 style={{ fontFamily: "Manrope" }}>Role</h1>
                 <p style={{ fontFamily: "Manrope" }} className="text-[#c7c7c7]">
-                  Front-end Developer
+                  Frontend Developer
                 </p>
               </div>
               <hr className="mt-3" />
@@ -371,7 +371,7 @@ const Featured = () => {
               <div>
                 <h1
                   style={{ fontFamily: "Manrope" }}
-                  className="text-[26px] lg:text-[32px] font-[500]"
+                  className="text-[26px] lg:text-[32px] font-[700]"
                 >
                   Shortly
                 </h1>
@@ -401,7 +401,7 @@ const Featured = () => {
 
               <div className="flex justify-between mt-4 ">
                 <h1 style={{ fontFamily: "Manrope" }}>Role</h1>
-                <p style={{ fontFamily: "Manrope" }}>Front-end Developer</p>
+                <p style={{ fontFamily: "Manrope" }}>Frontend Developer</p>
               </div>
               <hr className="mt-3" />
             </div>

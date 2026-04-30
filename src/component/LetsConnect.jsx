@@ -53,7 +53,7 @@ const LetsConnect = () => {
   };
 
   return (
-    <div className="layout lg:mt-20 ">
+    <div className="layout lg:mt-25 ">
       <div className=" flex flex-col lg:flex-row justify-between  mb-20 lg:mb-0">
         <div className="lg:w-[600px]">
           <div>
@@ -115,7 +115,7 @@ const LetsConnect = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-sm block w-full p-4"
+                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-sm block w-full p-3"
                 placeholder="john doe"
                 {...register("name")}
               />
@@ -142,7 +142,7 @@ const LetsConnect = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-sm block w-full p-4"
+                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-sm block w-full p-3"
                 {...register("email")}
               />
               {errors.email && (
@@ -168,7 +168,7 @@ const LetsConnect = () => {
                 type="subject"
                 name="subject"
                 id="subject"
-                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-sm block w-full p-4"
+                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-sm block w-full p-3"
                 {...register("subject")}
               />
               {errors.subject && (
@@ -194,7 +194,7 @@ const LetsConnect = () => {
                 id="message"
                 name="message"
                 rows="6"
-                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-sm block w-full p-4"
+                className="bg-[#1A1A1A] border-gray-300 text-white mt-3 text-sm rounded-lg block w-full p-3"
                 {...register("message")}
               ></textarea>
               {errors.message && (
@@ -209,7 +209,7 @@ const LetsConnect = () => {
             <button
               style={{ fontFamily: "Manrope" }}
               type="submit"
-              className="text-black bg-[#D3E97A] focus:ring-4 focus:outline-none focus:ring-[#c7c7c7] font-[700] rounded-full text-[16px] w-[150px] h-[54px] text-center my-5"
+              className="text-black bg-[#D3E97A] focus:ring-4 focus:outline-none focus:ring-[#c7c7c7] font-[700] rounded-full text-[16px] w-[120px] h-[50px] text-center my-3"
             >
               {isSubmitting ? (
                 <ClipLoader size={10} color="#0A0A0A" />
