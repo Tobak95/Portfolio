@@ -82,7 +82,7 @@ const Featured = () => {
             <div className="mt-5">
               <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
                 <a
-                  href="https://torii-gate-house-hunt-frontend.vercel.app/"
+                  href="https://eventra-teal.vercel.app/"
                   target="blank"
                   style={{ fontFamily: "Manrope" }}
                   className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
@@ -247,9 +247,6 @@ const Featured = () => {
               <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
                 <a
                   href="https://kolakhospital.com.ng" //coming back to this
-
-
-
                   target="blank"
                   style={{ fontFamily: "Manrope" }}
                   className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"

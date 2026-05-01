@@ -19,7 +19,7 @@ const About = () => {
             style={{ fontFamily: "Manrope" }}
             className=" lg:text-[32px] text-[#c7c7c7] "
           >
-            I’m a front-end developer based in Lagos with a Information and
+            I’m a frontend developer based in Lagos with a background in Information and
             Communication system.{" "}
           </h2>
           <p
