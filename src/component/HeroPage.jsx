@@ -7,7 +7,7 @@ import circle from "../assets/circle.png";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { FaDownload } from "react-icons/fa6";
-import Doc from "../../document/Oluwatobiloba's_CV.pdf";
+
 
 const cvLink =
   "https://drive.google.com/file/d/1lTFxrNeUpzVY_tI0GSpdXjb9fxV7xQZ-/view";

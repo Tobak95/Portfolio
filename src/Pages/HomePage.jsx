@@ -5,6 +5,7 @@ import Featured from "../component/Featured";
 import About from "../component/About";
 import LetsConnect from "../component/LetsConnect";
 
+
 const HomePage = () => {
   return (
     <div className="bg-black h-full">
@@ -14,6 +15,7 @@ const HomePage = () => {
       </section>
 
       <section id="work">
+      
         <Featured />
       </section>
 

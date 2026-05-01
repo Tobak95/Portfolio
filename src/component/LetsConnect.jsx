@@ -54,7 +54,7 @@ const LetsConnect = () => {
 
   return (
     <div className="layout lg:mt-25 ">
-      <div className=" flex flex-col lg:flex-row justify-between  mb-20 lg:mb-0">
+      <div className=" flex flex-col lg:flex-row justify-between  mb-10 lg:mb-0">
         <div className="lg:w-[600px]">
           <div>
             <h1
@@ -234,10 +234,10 @@ const LetsConnect = () => {
               </p>
             )}
           </form>
-          <div></div>
+         
         </div>
       </div>
-      <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7] my-5">
+      <p style={{ fontFamily: "Manrope" }} className="text-[#C7C7C7] my-2">
         © 2026  Akinola Tobiloba.
       </p>
     </div>

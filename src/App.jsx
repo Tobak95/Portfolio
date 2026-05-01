@@ -4,6 +4,7 @@ import { Suspense, lazy } from "react";
 import SuspenseLoader from "./component/layout/SuspenseLoader";
 import "./App.css";
 import ScrollToTOp from "./component/layout/ScrollToTOp";
+import WhatsappButton from "./component/WhatsappButton";
 
 const HomePage = lazy(() => import("./Pages/HomePage"));
 const AboutMe = lazy(() => import("./Pages/AboutMe"));
@@ -13,6 +14,7 @@ function App() {
     <>
       
         <Router>
+          <WhatsappButton/>
           <ScrollToTOp/>
           <Suspense fallback={<SuspenseLoader />}>
             <Routes>
