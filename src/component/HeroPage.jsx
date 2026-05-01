@@ -9,6 +9,8 @@ import { useState, useEffect } from "react";
 import { FaDownload } from "react-icons/fa6";
 import Doc from "../../document/Oluwatobiloba's_CV.pdf";
 
+const cvLink =
+  "https://drive.google.com/file/d/1lTFxrNeUpzVY_tI0GSpdXjb9fxV7xQZ-/view";
 const Introduction = () => {
   const roles = [
     "I build things for the web.",
@@ -68,11 +70,7 @@ const Introduction = () => {
 
             <div className="hidden lg:flex gap-3 text-[20px] ">
               <div className="flex justify-center items-center gap-3 lg:w-[190px] rounded-md bg-[#D3E97A]">
-                <a
-                  href="https://drive.google.com/file/d/1lTFxrNeUpzVY_tI0GSpdXjb9fxV7xQZ-/view?usp=drive_link"
-                  className=" text-[#000000] rounded-full"
-                  download={Doc}
-                >
+                <a href={cvLink} className=" text-[#000000] rounded-full">
                   Download CV
                 </a>
                 <FaDownload color="#000000" />
@@ -90,11 +88,7 @@ const Introduction = () => {
         </div>
         <div className="w-full lg:flex gap-3 text-[20px] ">
           <div className="lg:hidden mt-10 flex justify-center items-center gap-3 lg:w-[190px] rounded-md bg-[#D3E97A]">
-            <a
-              href="../../document/Oluwatobiloba's_CV.pdf"
-              className=" text-[#000000] rounded-full"
-              download={Doc}
-            >
+            <a href={cvLink} className=" text-[#000000] rounded-full">
               Download CV
             </a>
             <FaDownload color="#000000" />
