@@ -9,8 +9,8 @@ import port2 from "../assets/port2.png";
 import port3 from "../assets/port3.png";
 import arrow from "../assets/arrow.png";
 import giticon from "../assets/gitHorb.png";
-import HMSProject from "../assets/HMSProject.png"
-import event from "../assets/eventra.png"
+import HMSProject from "../assets/HMSProject.png";
+import event from "../assets/eventra.png";
 
 const Featured = () => {
   return (
@@ -346,7 +346,7 @@ const Featured = () => {
                 </a>
                 <a
                   href="https://github.com/Tobak95/Movie-App"
-                  target="blank"
+                  target="_blank"
                   style={{ fontFamily: "Manrope" }}
                   className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
                 >
@@ -409,7 +409,7 @@ const Featured = () => {
               <div className="w-full flex gap-5 lg:mr-80 text-[#D3E97A]">
                 <a
                   href="https://shortly-tobi.vercel.app/"
-                  target="blank"
+                  target="_blank"
                   style={{ fontFamily: "Manrope" }}
                   className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
                 >
@@ -420,7 +420,7 @@ const Featured = () => {
                 </a>
                 <a
                   href="https://github.com/Tobak95/shortly"
-                  target="blank"
+                  target="_blank"
                   style={{ fontFamily: "Manrope" }}
                   className="border-b-[1px] border-[#D3E97A] font-[700] text-[16px] flex items-center"
                 >

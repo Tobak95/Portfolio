@@ -8,6 +8,7 @@ import LetsConnect from "../component/LetsConnect";
 const HomePage = () => {
   return (
     <div className="bg-black h-full">
+
       <section id="home" className="scroll-mt-24">
         <HeroPage />
       </section>
@@ -15,6 +16,7 @@ const HomePage = () => {
       <section id="work">
         <Featured />
       </section>
+
       <section id="about">
         {" "}
         <About />
@@ -23,6 +25,7 @@ const HomePage = () => {
       <section id="stacks">
         <TechStack />
       </section>
+      
       <section id="contact">
         {" "}
         <LetsConnect />

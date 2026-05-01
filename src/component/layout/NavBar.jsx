@@ -6,9 +6,31 @@ import { MdOutlineClose } from "react-icons/md";
 import { useState } from "react";
 import circledLink from "../../assets/circledIn.png";
 import circledGitHub from "../../assets/circledGitHub.png";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [showHamburger, setShowHamburger] = useState(false);
+
+   const navigate = useNavigate();
+   const location = useLocation();
+
+   const handleNavClick = (to) => {
+     if (to.startsWith("#")) {
+       if (location.pathname !== "/") {
+         navigate("/");
+         setTimeout(() => {
+           document.querySelector(to)?.scrollIntoView({ behavior: "smooth" });
+         }, 100);
+       } else {
+         document.querySelector(to)?.scrollIntoView({ behavior: "smooth" });
+       }
+     } else {
+       navigate(to);
+     }
+     setShowHamburger(false);
+   };
+
 
   return (
     <nav className="bg-black fixed top-0 left-0 w-full z-30">
@@ -30,7 +52,8 @@ const NavBar = () => {
                     style={{ fontFamily: "Inter,sans-serif" }}
                     key={index}
                     href={link.to}
-                    className="font-[Inter]"
+                    onClick={() => handleNavClick(link.to)}
+                    className="font-[Inter] cursor-pointer"
                   >
                     {link.title}
                   </a>
@@ -81,7 +104,8 @@ const NavBar = () => {
                       style={{ fontFamily: "Inter,sans-serif" }}
                       key={index}
                       href={link.to}
-                      className="font-[Inter]"
+                      onClick={() => handleNavClick(link.to)}
+                      className="font-[Inter] cursor-pointer"
                     >
                       {link.title}
                     </a>

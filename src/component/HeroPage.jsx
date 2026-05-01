@@ -69,7 +69,7 @@ const Introduction = () => {
             <div className="hidden lg:flex gap-3 text-[20px] ">
               <div className="flex justify-center items-center gap-3 lg:w-[190px] rounded-md bg-[#D3E97A]">
                 <a
-                  href="../../document/Oluwatobiloba's_CV.pdf"
+                  href="https://drive.google.com/file/d/1lTFxrNeUpzVY_tI0GSpdXjb9fxV7xQZ-/view?usp=drive_link"
                   className=" text-[#000000] rounded-full"
                   download={Doc}
                 >

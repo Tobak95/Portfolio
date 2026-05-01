@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import SuspenseLoader from "./component/layout/SuspenseLoader";
 import "./App.css";
+import ScrollToTOp from "./component/layout/ScrollToTOp";
 
 const HomePage = lazy(() => import("./Pages/HomePage"));
 const AboutMe = lazy(() => import("./Pages/AboutMe"));
@@ -12,6 +13,7 @@ function App() {
     <>
       
         <Router>
+          <ScrollToTOp/>
           <Suspense fallback={<SuspenseLoader />}>
             <Routes>
               <Route path="/" element={<HomePage />} />
