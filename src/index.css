@@ -1,6 +1,133 @@
 @import "tailwindcss";
 
+/* ===== My colours and fonts =====
+   Use them like normal Tailwind classes:
+   bg-ink, bg-surface, text-lime, border-line, font-serif, font-mono ... */
+@theme {
+  --color-ink: #070707; /* page background (my black) */
+  --color-surface: #111111; /* cards */
+  --color-surface-2: #181818; /* cards on top of cards */
+  --color-line: #262626; /* borders */
+  --color-cream: #f4f4f0; /* main text */
+  --color-muted: #a6a6a0; /* soft text */
+  --color-lime: #d3e97a; /* my main colour */
+  --color-coral: #ff6b57; /* extra colours for the "colorful" parts */
+  --color-violet: #9d8cff;
+  --color-teal: #4fd8c4;
 
-.layout{
-    @apply lg:max-w-[1239px] w-full mx-auto p-2
+  --font-serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-spin-slower: spin 60s linear infinite reverse;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-blink: blink 1s steps(1) infinite;
+  --animate-ping-soft: ping-soft 2s infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes float {
+  50% {
+    translate: 0 -10px;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes ping-soft {
+  0% {
+    box-shadow: 0 0 0 0 rgb(211 233 122 / 0.7);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 10px rgb(211 233 122 / 0);
+  }
+}
+@keyframes drift {
+  to {
+    transform: translate3d(6vmax, 4vmax, 0) scale(1.15);
+  }
+}
+
+/* ===== Base ===== */
+html {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  @apply bg-ink font-sans text-cream antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  @apply bg-lime text-ink;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 3px;
+}
+
+/* Same page width everywhere (kept the name from my old site) */
+.layout {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-left: max(16px, env(safe-area-inset-left));
+  padding-right: max(16px, env(safe-area-inset-right));
+}
+@media (min-width: 768px) {
+  .layout {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* ===== Background: grid + glowing colour blobs ===== */
+.bg-grid {
+  background-image:
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 60% 20%, #000 10%, transparent 70%);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  animation: drift 18s cubic-bezier(0.22, 1, 0.36, 1) infinite alternate;
+}
+
+/* Thin rainbow ring around my photo */
+.ring-gradient {
+  background: conic-gradient(
+    from 210deg,
+    var(--color-lime),
+    var(--color-teal),
+    var(--color-violet),
+    var(--color-coral),
+    var(--color-lime)
+  );
+  mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #000 calc(100% - 1px));
+}
+
+/* Respect people who turn off animations on their device */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

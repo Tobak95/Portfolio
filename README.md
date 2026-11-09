@@ -1,12 +1,34 @@
-# React + Vite
+# Akinola Tobiloba · Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio: React + TypeScript + Vite + Tailwind CSS v4, animated with Framer Motion.
 
-Currently, two official plugins are available:
+## Run it
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install
+npm run dev        # local dev server
+npm run build      # type-check + production build
+```
 
-## Expanding the ESLint configuration
+## Where things are
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+  data/data.ts          <- ALL content: projects, services, skills, experience, links
+  pages/                <- one file per page (Home, About, Services, Projects, ProjectDetails, Contact, NotFound)
+  components/
+    layout/             <- NavBar, Footer, PageHeader, Page (page transition), Background, WhatsApp button
+    home/               <- Hero, HeroPortrait, Typewriter, SkillTapes
+    Button.tsx          <- magnetic pill button (to="/page" or href="https://...")
+    ProjectCard.tsx     <- tilting project card
+    ServiceCard.tsx
+    ContactForm.tsx     <- Formspree form (react-hook-form + yup)
+    Reveal.tsx          <- wrap anything to make it slide in on scroll
+  utils/                <- axios instance, form rules, animation easing
+  index.css             <- my colours + fonts (bg-lime, text-muted, font-serif ...)
+```
+
+## Add a new project
+
+Open `src/data/data.ts`, copy one item in the `projects` list, change the text, and import its screenshot at the top.
+It automatically gets a card on the Projects page and its own page at `/projects/<slug>`.
